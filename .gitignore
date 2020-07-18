@@ -21,7 +21,7 @@ target/
 *.mvn
 !.idea/google-java-format.xml
 !.idea/runConfigurations/*.xml
-
+!**/runConfigurations/*.xml
 
 ### NetBeans ###
 /nbproject/private/

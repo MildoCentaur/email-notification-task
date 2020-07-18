@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="EmailNotificationTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="email-notification-task" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="ar.com.eureka.notification.email.EmailNotificationTaskApplication" />
+    <option name="PROGRAM_PARAMETERS" value="alejandro.mildiner@gmail.com &quot;ONBOARDED Notification&quot;" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <envs>
+      <env name="key" value="8Bo5nel3!" />
+      <env name="username" value="secret" />
+      <env name="password" value="secret" />
+    </envs>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
