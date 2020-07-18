@@ -4,7 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 !.idea/google-java-format.xml
-!.idea/runConfigurations/
+!.idea/runConfigurations/**
 
 ### STS ###
 .apt_generated
@@ -21,6 +21,9 @@ target/
 *.iml
 *.ipr
 *.mvn
+
+!/google-java-format.xml
+!/runConfigurations/**
 
 ### NetBeans ###
 /nbproject/private/
