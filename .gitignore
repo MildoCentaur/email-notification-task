@@ -3,6 +3,8 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+!.idea/google-java-format.xml
+!.idea/runConfigurations/
 
 ### STS ###
 .apt_generated
