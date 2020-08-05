@@ -18,8 +18,6 @@ public class EmailNotificationRunnerTask implements CommandLineRunner {
   @Value("#{${mailcode.properties}}")
   private Map<String, String> valuesMap;
 
-  @Value("${test.concat}")
-  private String concat;
 
   @Override
   public void run(String... parameters) throws Exception {
@@ -31,10 +29,7 @@ public class EmailNotificationRunnerTask implements CommandLineRunner {
 
     MailContext context = parseMailContext(parameters);
 
-    valuesMap.entrySet().forEach(System.out::println);
-
-    sender.sendSimpleMessage("alejandro.mildiner@gmail.com",concat, "TExt Content");
-    sender.sendMessageUsingThymeleafTemplate("alejandro.mildiner@gmail.com","Thymelef",null);
+    sender.sendMessageUsingThymeleafTemplate("alejandro.mildiner@gmail.com","Thymelef template",null);
 
   }
 
