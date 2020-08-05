@@ -8,6 +8,7 @@
       <env name="key" value="8Bo5nel3!" />
       <env name="username" value="secret" />
       <env name="password" value="secret" />
+      <env name="mail.key" value="8Bo5nel7!" />
     </envs>
     <method v="2">
       <option name="Make" enabled="true" />
