@@ -2,6 +2,7 @@ package ar.com.eureka.notification.email.runners;
 
 import ar.com.eureka.notification.email.EurekaMailSender;
 import ar.com.eureka.notification.email.context.MailContext;
+import java.util.HashMap;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -28,8 +29,12 @@ public class EmailNotificationRunnerTask implements CommandLineRunner {
     }
 
     MailContext context = parseMailContext(parameters);
+    Map<String, Object> templateModel = new HashMap<>();
+    templateModel.put("recipientName", "Alejandro RecipientName");
+    templateModel.put("text", "Test");
+    templateModel.put("senderName", "SenderName");
 
-    sender.sendMessageUsingThymeleafTemplate("alejandro.mildiner@gmail.com","Thymelef template",null);
+    sender.sendMessageUsingThymeleafTemplate("alejandro.mildiner@gmail.com","Thymelef template",templateModel);
 
   }
 

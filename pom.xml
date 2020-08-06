@@ -47,8 +47,16 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
 
-    <!-- Database -->
+   <!-- Database -->
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
@@ -56,16 +64,16 @@
     </dependency>
 
     <!-- thymeleaf dependencies -->
-    <dependency>
-      <groupId>org.thymeleaf</groupId>
-      <artifactId>thymeleaf</artifactId>
-      <version>${org.thymeleaf-version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.thymeleaf</groupId>
-      <artifactId>thymeleaf-spring5</artifactId>
-      <version>${org.thymeleaf-version}</version>
-    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>org.thymeleaf</groupId>-->
+      <!--<artifactId>thymeleaf</artifactId>-->
+      <!--<version>${org.thymeleaf-version}</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>org.thymeleaf</groupId>-->
+      <!--<artifactId>thymeleaf-spring5</artifactId>-->
+      <!--<version>${org.thymeleaf-version}</version>-->
+    <!--</dependency>-->
 
     <!-- testing -->
     <dependency>
@@ -89,6 +97,7 @@
       <artifactId>spring-rabbit-test</artifactId>
       <scope>test</scope>
     </dependency>
+
 
   </dependencies>
 
