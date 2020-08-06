@@ -27,7 +27,7 @@ public class MailConfiguration {
   @Bean
   public SpringResourceTemplateResolver thymeleafTemplateResolver() {
     SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
-    templateResolver.setPrefix("templates/mails/");
+    templateResolver.setPrefix("/WEB-INF/mails/");
     templateResolver.setSuffix(".html");
     templateResolver.setTemplateMode("HTML");
     templateResolver.setCharacterEncoding("UTF-8");
