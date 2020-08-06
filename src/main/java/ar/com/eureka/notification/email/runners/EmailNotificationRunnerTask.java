@@ -1,7 +1,6 @@
 package ar.com.eureka.notification.email.runners;
 
 import ar.com.eureka.notification.email.EurekaMailSender;
-import ar.com.eureka.notification.email.context.MailContext;
 import java.util.HashMap;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +27,7 @@ public class EmailNotificationRunnerTask implements CommandLineRunner {
       System.out.println("to: "+ to + " template:" + templateName);
     }
 
-    MailContext context = parseMailContext(parameters);
+//    MailContext context = parseMailContext(parameters);
     Map<String, Object> templateModel = new HashMap<>();
     templateModel.put("recipientName", "Alejandro RecipientName");
     templateModel.put("text", "Test");
@@ -38,7 +37,7 @@ public class EmailNotificationRunnerTask implements CommandLineRunner {
 
   }
 
-  private MailContext parseMailContext(String[] parameters) {
-    return null;
-  }
+//  private MailContext parseMailContext(String[] parameters) {
+//    return null;
+//  }
 }
